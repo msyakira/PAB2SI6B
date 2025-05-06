@@ -25,19 +25,22 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+              'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+              'you can reconfigure this by running the FlutterFire CLI again.',
         );
       default:
         throw UnsupportedError(
@@ -47,30 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCycY9kDtw-ibRGpz_G3KJwP38f5KvCQ_s',
-    appId: '1:778302661832:web:efa28bcbceac3b73c1b1fd',
-    messagingSenderId: '778302661832',
-    projectId: 'fasum-app-a5ad5',
-    authDomain: 'fasum-app-a5ad5.firebaseapp.com',
-    storageBucket: 'fasum-app-a5ad5.firebasestorage.app',
-    measurementId: 'G-SN1HKKLPSY',
+    apiKey: 'AIzaSyD7JgSDgJcsa5nqaEADp3RbW6hDF7oufdw',
+    appId: '1:422454988794:web:cabbf37a337125fcf39e43',
+    messagingSenderId: '422454988794',
+    projectId: 'fasum-bdb12',
+    authDomain: 'fasum-bdb12.firebaseapp.com',
+    storageBucket: 'fasum-bdb12.firebasestorage.app',
+    measurementId: 'G-HMEVT2WNF2',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDMSd4bkV9-Xes4-bvzhqEr9-MT1ee7UIM',
-    appId: '1:778302661832:android:7d9f33d7edfb5c30c1b1fd',
-    messagingSenderId: '778302661832',
-    projectId: 'fasum-app-a5ad5',
-    storageBucket: 'fasum-app-a5ad5.firebasestorage.app',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCycY9kDtw-ibRGpz_G3KJwP38f5KvCQ_s',
-    appId: '1:778302661832:web:10bc339f08451d21c1b1fd',
-    messagingSenderId: '778302661832',
-    projectId: 'fasum-app-a5ad5',
-    authDomain: 'fasum-app-a5ad5.firebaseapp.com',
-    storageBucket: 'fasum-app-a5ad5.firebasestorage.app',
-    measurementId: 'G-2E51K48T2Q',
+    apiKey: 'AIzaSyBYq_ZUyrtaZasc6FMrWXoVW604ka0FqzE',
+    appId: '1:422454988794:android:00fbe71bb429cfebf39e43',
+    messagingSenderId: '422454988794',
+    projectId: 'fasum-bdb12',
+    storageBucket: 'fasum-bdb12.firebasestorage.app',
   );
 }

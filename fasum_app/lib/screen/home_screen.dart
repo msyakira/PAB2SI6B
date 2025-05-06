@@ -1,7 +1,9 @@
+import 'package:fasum_app/screen/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fasum_app/screens/sign_in_screen.dart';
-import 'package:fasum_app/screens/add_post_screen.dart';
+
+
+import '../addpost.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
